@@ -104,7 +104,7 @@ const App = () => {
                   <h1 className="mt-0">
                     Customise your 16‑inch MacBook Pro - Space Grey
                   </h1>
-                  <ul className="summary-list">
+                  <ul className="summary-list" aria-label="summary-list">
                     <li>{processorList.find((c) => c.selected)?.variant}</li>
                     <li>16-inch Retina display with True Tone</li>
                     <li>Four Thunderbolt 3 ports</li>
@@ -114,7 +114,7 @@ const App = () => {
                   {!!processorList.length && (
                     <div className="component">
                       <h3 className="component__name">Processor</h3>
-                      <ul>
+                      <ul aria-label="processor-list">
                         {processorList.map((v) => (
                           <li
                             key={`Processor_${v.serialNo}`}
